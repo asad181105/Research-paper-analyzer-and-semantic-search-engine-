@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-stone-50 text-stone-900 dark:bg-zinc-950 dark:text-zinc-100;
+}
+
+mark {
+  @apply bg-amber-200/80 dark:bg-amber-500/40 text-inherit rounded-sm px-0.5;
+}
+
+.prose-paper h1 {
+  @apply font-serif text-3xl;
+}
